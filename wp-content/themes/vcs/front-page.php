@@ -10,6 +10,7 @@
     get_template_part('elements/slider');
     get_template_part('elements/about');
     get_template_part('elements/services');
+    get_template_part('elements/work');
 ?>
 <div class="section">
     <div class="map-container">

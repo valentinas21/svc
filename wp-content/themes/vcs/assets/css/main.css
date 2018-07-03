@@ -70,6 +70,7 @@ li a {
 .navigation li a{
   font-family: 'Gloria Hallelujah', cursive;
   transition: .2s ease-in .1s;
+  padding: 0 25px;
 }
 .navigation li a:hover {
   color: red;
@@ -100,6 +101,7 @@ li a {
   padding-left: 7%;
   padding-right: 7%;
   padding-top: 10%;
+  padding-bottom: 10%;
   flex-wrap: wrap;
   align-items: flex-start;
   margin:0;
@@ -115,7 +117,12 @@ li a {
   text-align: center;
 }
 /* works section */
-
+.works-container {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .works-list-container {
   align-items:flex-start;
   justify-content: space-around;
@@ -145,7 +152,20 @@ li a {
   display: block;
   padding-top: 10%;
   text-align: center;
+  background-color: rgba(204, 204, 204,0.8);
 }
 .text-container p {
   padding-top: 5%;
+}
+.services-button{
+  background-color: rgba(102, 0, 0,0.5);
+  text-align: center;
+  transition: .2s ease-in .1s;
+}
+.services-button:hover {
+  background-color: rgba(102, 0, 0,0.7);
+  text-decoration: underline;
+}
+.services-button a:hover {
+  color:#000;
 }

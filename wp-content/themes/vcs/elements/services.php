@@ -7,7 +7,7 @@ $query = new WP_Query( array(
   ) );
 
  ?>
- <section class="works-container">
+ <section class="works-container" style="background-image: url('<?= get_template_directory_uri() . '/Images/first.jpg'?>')">
    <div class="main-container">
      <h1><?php the_field('services_field',42) ?></h1>
    </div>
@@ -26,6 +26,9 @@ $query = new WP_Query( array(
                           <div class="text-container flex-container">
                             <h4><?php the_field('works_text', get_the_ID() ) ?></h4>
                             <p><?php the_field('works_description', get_the_ID() )?></p>
+                          </div>
+                          <div class="services-button">
+                              <a href="<?php the_field('down_link',193) ?>"><?php the_field('services_button', get_the_ID() ) ?></a>
                           </div>
                         </div>
                       </div>
