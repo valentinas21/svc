@@ -25,6 +25,7 @@ function vcs_theme_style() {
 add_action('init', 'vcs_adding_theme_supports');
 function vcs_adding_theme_supports() {
   add_theme_support('menus');
+  add_theme_support('post-thumbnails');
 
 }
 add_action('init', 'vcs_registering_menus');
@@ -46,7 +47,14 @@ add_action('init', 'vcs_works_image_sizes');
 function vcs_works_image_sizes() {
   add_image_size('other_image', 300, 200, true);
 }
-
+add_action('init', 'vcs_portfolio_image_sizes');
+function vcs_portfolio_image_sizes() {
+  add_image_size('portfolio_small', 200, 200, true);
+}
+add_action('init', 'vcs_portfolio_small_image_sizes');
+function vcs_portfolio_small_image_sizes() {
+  add_image_size('portfolio_large', 300, 250, true);
+}
 function my_acf_google_map_api( $api ){
 
 	$api['key'] = 'AIzaSyB9spHYeyF9cx8MSTc5Cq1esnSo_4pOk0I';
