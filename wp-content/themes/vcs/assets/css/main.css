@@ -130,6 +130,7 @@ li a {
   padding-left: 7%;
   padding-right: 7%;
   overflow: hidden;
+  padding-bottom: 30px;
 }
 /* hover img*/
 .images-container{
@@ -164,8 +165,73 @@ li a {
 }
 .services-button:hover {
   background-color: rgba(102, 0, 0,0.7);
-  text-decoration: underline;
 }
 .services-button a:hover {
   color:#000;
+}
+/* darbai section */
+.images-list-container {
+  padding-top: 5%;
+}
+.image-item img {
+  width: 95.5%;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  filter: grayscale(100%);
+  filter: blur(0.5px);
+
+}
+.image-item img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  filter: blur(0px);
+  border-radius: 20%;
+}
+.background-image-container  {
+  background-color: rgba(102, 0, 0,0.7);
+}
+.darbai-button {
+  padding: 1%;
+  position: absolute;
+  background-color: rgba(195, 204, 179, 0.45);
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0.75;
+}
+.darbai-button a:hover {
+  text-decoration: none;
+}
+.darbai-button:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: rgba(195, 204, 179, 0.65);
+  opacity: 1;
+}
+.more-images-list-container{
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+}
+.more-image-item {
+  padding-bottom: 3%;
+}
+.more-image-item img {
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.more-image-item img:hover{
+  border-radius: 20%;
+
+}
+a.more-image-item img {
+height: 150px;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+margin: 94px 20px 20px 20px;
 }

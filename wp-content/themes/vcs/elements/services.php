@@ -18,17 +18,18 @@ $query = new WP_Query( array(
                  $query->the_post();
                  $image_id = get_field('services_image', get_the_ID() );
                  $image_url = wp_get_attachment_image_src($image_id,'other_image');
+
                  ?>
                  <li class="works-services-container">
                    <div class="background-container">
                      <div class="images-container">
                        <img src="<?= $image_url[0] ?>" alt="") ?>
                           <div class="text-container flex-container">
-                            <h4><?php the_field('works_text', get_the_ID() ) ?></h4>
-                            <p><?php the_field('works_description', get_the_ID() )?></p>
+                            <h4><?php the_field('services_text', get_the_ID() ) ?></h4>
+                            <p><?php the_field('services_description', get_the_ID() )?></p>
                           </div>
                           <div class="services-button">
-                              <a href="<?php the_field('down_link',193) ?>"><?php the_field('services_button', get_the_ID() ) ?></a>
+                              <a href="<?php the_permalink(); ?> " class="button special"><?= __('Plačiau') ?></a>
                           </div>
                         </div>
                       </div>

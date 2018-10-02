@@ -15,7 +15,7 @@
     <div class="container">
         <div class="header-logo-container flex-container">
             <div class="logo">
-              <a href="<?php get_site_url() ?>"><img src="<?php the_field('logo_field', 42); ?>"></a>
+              <a href="<?php get_site_url() ?>"><img src="<?php the_field('logo_field', 42); ?> "></a>
             </div>
             <?php
 
