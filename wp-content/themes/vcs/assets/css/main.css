@@ -13,6 +13,27 @@ html {
 ul {
   list-style: none;
 }
+img, a {
+  border:none;
+  outline:none;
+
+}
+
+
+.acf-map {
+	width: 100%;
+	height: 505px;
+	border: #ccc solid 1px;
+	margin: 20px 0;
+  top: 9.5em;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}
+
+
 li a {
   text-decoration: none!important;
   padding-left: 20%;
@@ -77,6 +98,30 @@ li a {
   opacity: 0.5;
   font-size: 20px;
 }
+.burger {
+    display: none;
+    cursor: pointer;
+
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
 /* automatine karusele*/
 
 
@@ -105,6 +150,7 @@ li a {
   flex-wrap: wrap;
   align-items: flex-start;
   margin:0;
+  padding-bottom: 20%;
 }
 .about-us-container p:nth-child(2) {
   text-align: left;
@@ -148,7 +194,18 @@ li a {
   margin-bottom: 0;
 
 }
-
+.contact {
+  height: 230px;
+  background-image: url('../../images/pagr.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 53% 14%;
+  margin-top: -100px;
+  position:relative;
+  justify-content: center;
+  background-attachment: fixed;
+  padding-bottom: 20px;
+}
 .text-container {
   display: block;
   padding-top: 10%;
@@ -193,25 +250,7 @@ li a {
 .background-image-container  {
   background-color: rgba(102, 0, 0,0.7);
 }
-.darbai-button {
-  padding: 1%;
-  position: absolute;
-  background-color: rgba(195, 204, 179, 0.45);
-  -moz-transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  opacity: 0.75;
-}
-.darbai-button a:hover {
-  text-decoration: none;
-}
-.darbai-button:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  background-color: rgba(195, 204, 179, 0.65);
-  opacity: 1;
-}
+
 .more-images-list-container{
   flex-wrap: wrap;
   position: relative;
@@ -234,4 +273,83 @@ height: 150px;
 border: 3px solid white;
 box-shadow: 0px 0px 8px rgba(0,0,0,.3);
 margin: 94px 20px 20px 20px;
+}
+.contact-form {
+  position: relative;
+  top: 4em;
+}
+
+.icons {
+  position: relative;
+  top: 90em;
+  justify-content: center;
+  background-color: red;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.icons h3 {
+  padding-left: 30px;
+  padding-right: 25px;
+  color: blue;
+  font-size: 48px;
+  transition: .2s ease-in .1s;
+}
+.icons h3:hover {
+  transition: .4s ease-in .2s;
+  color: green;
+}
+.copyright-container {
+  position: absolute;
+  top:9em;
+}
+.adress-container {
+  width: 25%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  transition: .2s ease-in .1s;
+  border-radius: 30%;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.adress-container:hover {
+  width: 25%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: rgba(255, 0, 0, 0.3);
+  transition: .2s ease-in .1s;
+  border-radius: 60%;
+
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 5em;
+  transition: .2s ease-in .1s;
+}
+#myBtn:hover svg{
+  opacity: 0.75;
+  transition: .2s ease-in .1s;
+  color: blue;
+  padding: 5px;
+}
+@media all and (max-width: 1000px) {
+    .burger {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .navigation{
+    position: absolute;
+
+  }
 }

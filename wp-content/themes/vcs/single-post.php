@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
   get_header();
   if(have_posts() ) :
     while(have_posts() ) :
@@ -19,4 +19,4 @@
    <div class="content-container">
      <?php the_content() ?>
    </div>
-</div>
+</div> -->

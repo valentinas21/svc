@@ -14,6 +14,9 @@
     get_template_part('elements/services_second');
     get_template_part('elements/cut');
     get_template_part('elements/darbai');
+    get_template_part('elements/price');
+    get_template_part('elements/contact');
+    get_template_part('elements/map');
 ?>
 <div class="section">
     <div class="map-container">

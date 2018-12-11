@@ -1,17 +1,16 @@
-<?php
-    /* Template Name: About us template */
+ <?php
+    /* Template Name: Darbai */
     get_header();
     while(have_posts() ) :
       the_post()
 
-
- ?>
+?>
  <?php
    $workQuery = new WP_QUERY( array(
      'post_type'             =>'darbai',
      'post_per_page'         =>20,
      'orderby'               =>'date',
-     'order'                 =>'DESC'
+     'order'                 =>'ASC'
 
    ));
   ?>
@@ -26,15 +25,15 @@
                $image_id = get_field('darbai_images', get_the_ID());
                $image = wp_get_attachment_image_src( $image_id, 'portfolio_small');
                ?>
-   <li class="more-image-item">
+   <li class="more-image-item"> <!-- Nuotraukos random-->
     <a href="<?= $image[0] ?>" data-lightbox="gallery"><img src="<?="$image[0]"?>" alt=""></a>
    </li>
 
      <?php endwhile;endif; ?>
- </ul>
+  </ul>
    <div class="content-container">
      <?php the_content() ?>
-   </div>
+    </div>
 </div>
 <?php
   get_footer();

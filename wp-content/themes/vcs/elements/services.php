@@ -1,4 +1,11 @@
 <?php
+   /* Template Name: paslaugos */
+   get_header();
+   while(have_posts() ) :
+     the_post()
+
+?>
+<?php
 $query = new WP_Query( array(
   'post_type'         => 'services',
   'posts_per_page'    => 3,
@@ -7,7 +14,7 @@ $query = new WP_Query( array(
   ) );
 
  ?>
- <section class="works-container" style="background-image: url('<?= get_template_directory_uri() . '/Images/first.jpg'?>')">
+ <section class="works-container">
    <div class="main-container">
      <h1><?php the_field('services_field',42) ?></h1>
    </div>
@@ -28,13 +35,15 @@ $query = new WP_Query( array(
                             <h4><?php the_field('services_text', get_the_ID() ) ?></h4>
                             <p><?php the_field('services_description', get_the_ID() )?></p>
                           </div>
-                          <div class="services-button">
+                          <!-- <div class="services-button">
                               <a href="<?php the_permalink(); ?> " class="button special"><?= __('Plačiau') ?></a>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
                      </li>
                      <?php endwhile;endif; ?>
      </ul>
    </nav>
+   <?php get_footer() ?>
+ <?php endwhile; ?>
  </section>

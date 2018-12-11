@@ -15,10 +15,11 @@
     <div class="container">
         <div class="header-logo-container flex-container">
             <div class="logo">
-              <a href="<?php get_site_url() ?>"><img src="<?php the_field('logo_field', 42); ?> "></a>
+              <a href="http://localhost/svc/"><img src="<?php the_field('logo_field', 42); ?> "></a>
             </div>
             <?php
-
+            /* linkas kolkas
+             vidiniam hoste*/
       $menu= wp_nav_menu( array(
           'theme_location'      => 'top-menu',
           'container'           => 'nav ',
@@ -26,6 +27,12 @@
           'menu_class'          =>'navigation hide'
         ));
         ?>
+        <button onclick="" id="myBtn" title="Į viršų"><?php the_field('scroll_link', 42) ?></button>
+      <div class="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
       </div>
     </div>
   </header>
