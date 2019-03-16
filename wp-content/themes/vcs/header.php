@@ -13,10 +13,10 @@
     </div>
   <header>
     <div class="container">
-        <div class="header-logo-container flex-container">
-            <div class="logo">
-              <a href="http://localhost/svc/"><img src="<?php the_field('logo_field', 42); ?> "></a>
-            </div>
+      <div class="header-logo-container">
+        <div class="logo">
+          <a href="http://localhost/svc/"><img src="<?php the_field('logo_field', 42); ?> "></a>
+        </div>
             <?php
             /* linkas kolkas
              vidiniam hoste*/

@@ -6,7 +6,7 @@
   /* color: #000000; */
 }
 html {
-  max-width: 1366px;
+  max-width: 1920px;
   margin: 0 auto;
   align-items: center;
 }
@@ -19,13 +19,12 @@ img, a {
 
 }
 
-
 .acf-map {
 	width: 100%;
-	height: 505px;
+	height: 800px;
 	border: #ccc solid 1px;
-	margin: 20px 0;
-  top: 9.5em;
+	margin:0;
+  top: 1rem;
 }
 
 /* fixes potential theme css conflict */
@@ -34,16 +33,15 @@ img, a {
 }
 
 
-li a {
+/* li a {
   text-decoration: none!important;
   padding-left: 20%;
   padding-right: 20%;
-  display: block;
   color: black;
   font-size: 22px;
   color: rgba(179, 0, 0,1);
 
-}
+} */
 
 .container {
   padding-left: 10%;
@@ -81,23 +79,65 @@ li a {
 }
 .header-logo-container {
   padding: 20px;
-  justify-content: space-around;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
 }
 .navigation {
   margin-bottom: 0;
-  display: flex
+  align-items: flex-end;
 }
-.navigation li a{
-  font-family: 'Gloria Hallelujah', cursive;
-  transition: .2s ease-in .1s;
-  padding: 0 25px;
+.logo {
+  width: 25%;
 }
-.navigation li a:hover {
-  color: red;
-  opacity: 0.5;
-  font-size: 20px;
+.navigation li {
+  padding-left: 30px;
+  display: inline;
+
 }
+.navigation li a {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+    position: relative;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color  0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #000;
+    font-size: 20px;
+}
+.navigation li a::before {
+  content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    animation: underline-gradient 6s linear infinite;
+  background-image: linear-gradient(90deg, rgba(255, 204, 204, 0.8) 15%, rgba(255, 153, 153, 0.6) 35%, rgba(255, 77, 77, 0.8) 75%);
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.navigation li a:active::before {
+  background-color: #000;
+}
+.navigation li a:hover::before, a:focus::before {
+  transform-origin: left top;
+    transform: scale(1, 1);
+}
+.navigation li a:hover, a:focus, a:active {
+  color: #999;
+    text-decoration: none;
+
+}
+
 .burger {
     display: none;
     cursor: pointer;
@@ -130,8 +170,7 @@ li a {
 .main-container {
   padding-top: 5%;
   padding-left: 5%;
-  padding-right: 5%;
-  width: 27%;
+  width: 16%;
 }
 .main-container h1{
   border-bottom: 1px solid rgba(89, 89, 89, 0.5);
@@ -276,12 +315,36 @@ margin: 94px 20px 20px 20px;
 }
 .contact-form {
   position: relative;
-  top: 4em;
+  display: block;
+  height: 68em;
 }
-
+.wpcf7 {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto!important;
+}
+.wpcf7-form label {
+  width: 60%!important;
+}
+.cf7-style input.wpcf7-form-control.wpcf7-submit {
+  width: 25%;
+  transition-duration: 0.4s;
+  border: 2px solid #555555;
+  background-color: white;
+  color: black;
+}
+.cf7-style input.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  background-color: #555555;
+  border-radius: 5%;
+}
+.cf7-style p {
+  font-size: 1rem!important;
+  margin-bottom: 1rem!important;
+}
 .icons {
   position: relative;
-  top: 90em;
   justify-content: center;
   background-color: red;
   padding-top: 4em;
@@ -294,34 +357,76 @@ margin: 94px 20px 20px 20px;
   font-size: 48px;
   transition: .2s ease-in .1s;
 }
-.icons h3:hover {
+.icons :first-child:hover h3 {
   transition: .4s ease-in .2s;
-  color: green;
+  color: #ffffff;
+}
+.icons :nth-child(2):hover h3 {
+  transition: .4s ease-in .2s;
+  color: #ffff00;
+}
+.icons :nth-child(3):hover h3 {
+  transition: .4s ease-in .2s;
+  color: #ff00ff;
 }
 .copyright-container {
   position: absolute;
   top:9em;
 }
-.adress-container {
-  width: 25%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  transition: .2s ease-in .1s;
-  border-radius: 30%;
-  background-color: rgba(255, 0, 0, 0.5);
+.adress-container strong {
+  visibility: visible;
+	position: relative;
 }
-.adress-container:hover {
-  width: 25%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  background-color: rgba(255, 0, 0, 0.3);
-  transition: .2s ease-in .1s;
-  border-radius: 60%;
+.adress-container p:hover:after{
+  visibility: visible;
+  position: absolute;
+  display: flex;
+	content: "asdasd";
 
+}
+.more-background {
+  height: 600px;
+  background-image: url('../../images/more.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 64%;
+  margin-top: -17px;
+  position: relative;
+  justify-content: center;
+  background-attachment: fixed;
+}
+.more-color {
+  height: 600px;
+  opacity: 0.5;
+  background-color:#1a1a1a
+}
+.more-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+}
+.more-description p {
+  margin-bottom: 0;
+  font-size: 32px;
+  color: red;
+
+}
+.more-description p:first-child {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 1000;
+}
+.more-description p:nth-child(2) {
+  letter-spacing: 0.2rem;
+  color: black;
+  text-transform:full-width;
+  font-weight: 2000;
 }
 #myBtn {
   display: none;
@@ -338,18 +443,30 @@ margin: 94px 20px 20px 20px;
 #myBtn:hover svg{
   opacity: 0.75;
   transition: .2s ease-in .1s;
-  color: blue;
+  color: rgba(0, 0, 128,1);
   padding: 5px;
 }
 @media all and (max-width: 1000px) {
-    .burger {
+  .burger {
     display: block;
   }
   .hide {
     display: none;
   }
-  .navigation{
-    position: absolute;
-
+  .navigation {
+    top: 2em;
+    position: relative;
   }
+  .navigation li{
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+  .navigation li a {
+    display: block;
+  }
+  .header-logo-container {
+    align-items: flex-start;
+  }
+
 }

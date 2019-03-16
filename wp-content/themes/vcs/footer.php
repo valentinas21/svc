@@ -14,9 +14,9 @@
           while($query->have_posts() ) :
           $query->the_post();
           ?>
-
     </div>
-    <div class="icons flex-container">
+
+     <div class="icons flex-container">
       <a href="<?php the_field("facebook_link", 42) ?>">
         <h3><?php the_field("facebook_link", get_the_ID() ) ?></h3>
       </a>
@@ -29,9 +29,9 @@
       <div class="copyright-container">
         <p><?php the_field('copyright_text', get_the_ID()) ?>
       </div>
-</footer>
 
-<?php wp_footer(); ?>
+</footer>
 <?php endwhile;endif; ?>
+<?php wp_footer(); ?>
 </body>
 </html>

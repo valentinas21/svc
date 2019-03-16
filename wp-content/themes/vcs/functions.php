@@ -46,7 +46,7 @@ function vcs_registering_menus () {
 }
 add_action('init', 'vcs_image_sizes');
 function vcs_image_sizes() {
-  add_image_size('banner_image', 1366, 670, true);
+  add_image_size('banner_image', 1920, 900, true);
 }
 add_action('init', 'vcs_works_image_sizes');
 function vcs_works_image_sizes() {

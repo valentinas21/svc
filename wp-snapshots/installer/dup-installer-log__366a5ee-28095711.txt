@@ -1,0 +1,264 @@
+********************************************************************************
+* DUPLICATOR-LITE: Install-Log
+* STEP-1 START @ 06:37:29
+* VERSION: 1.3.0
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PHP:		7.3.2 | SAPI: apache2handler
+PHP MEMORY:	5000M | SUHOSIN: disabled
+SERVER:		Apache/2.4.38 (Win64) OpenSSL/1.1.1a PHP/7.3.2
+DOC ROOT:	C:/xampp/htdocs/main
+DOC ROOT 755:	true
+LOG FILE 644:	false
+REQUEST URL:	http://localhost/main/dup-installer/main.installer.php
+SAFE MODE :	0
+CONFIG MODE :	NEW
+--------------------------------------
+PRE-EXTRACT-CHECKS
+--------------------------------------
+- PASS:  '.htaccess' not found - no backup needed.
+- PASS:  'web.config' not found - no backup needed.
+- PASS:  '.user.ini' not found - no backup needed.
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME:	20181228_366a5eed6871c8cd4134_20181228095711_archive.zip
+SIZE:	105.42MB
+
+>>> Starting ZipArchive Unzip
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 10517
+    [filename] => C:\xampp\htdocs\main\20181228_366a5eed6871c8cd4134_20181228095711_archive.zip
+    [comment] => 
+)
+File timestamp set to Current: 2019-03-07 18:37:34
+<<< ZipArchive Unzip Complete: true
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 06:37:38 - RUNTIME: 9.8210 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 06:37:59
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.1.38 -- Build Server: 10.1.31
+FILE SIZE:	dup-database__366a5ee-28095711.sql (1.48MB) - installer-data.sql (0B)
+TIMEOUT:	5000
+MAXPACK:	268435456
+SQLMODE:	NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[C:/xampp/htdocs/main/dup-installer/dup-installer-data__366a5ee-28095711.sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	524
+
+eshop_commentmeta: (0)
+eshop_comments: (0)
+eshop_failed_jobs: (0)
+eshop_links: (0)
+eshop_mailchimp_carts: (0)
+eshop_options: (394)
+eshop_postmeta: (237)
+eshop_posts: (66)
+eshop_queue: (0)
+eshop_responsive_menu: (280)
+eshop_term_relationships: (5)
+eshop_term_taxonomy: (18)
+eshop_termmeta: (1)
+eshop_terms: (18)
+eshop_usermeta: (34)
+eshop_users: (1)
+eshop_wc_download_log: (0)
+eshop_wc_webhooks: (0)
+eshop_woocommerce_api_keys: (0)
+eshop_woocommerce_attribute_taxonomies: (0)
+eshop_woocommerce_downloadable_product_permissions: (0)
+eshop_woocommerce_log: (0)
+eshop_woocommerce_order_itemmeta: (0)
+eshop_woocommerce_order_items: (0)
+eshop_woocommerce_payment_tokenmeta: (0)
+eshop_woocommerce_payment_tokens: (0)
+eshop_woocommerce_sessions: (1)
+eshop_woocommerce_shipping_zone_locations: (1)
+eshop_woocommerce_shipping_zone_methods: (2)
+eshop_woocommerce_shipping_zones: (1)
+eshop_woocommerce_tax_rate_locations: (0)
+eshop_woocommerce_tax_rates: (0)
+eshop_yoast_seo_links: (0)
+eshop_yoast_seo_meta: (65)
+svc_commentmeta: (0)
+svc_comments: (0)
+svc_duplicator_packages: (0)
+svc_links: (0)
+svc_options: (140)
+svc_postmeta: (777)
+svc_posts: (212)
+svc_term_relationships: (22)
+svc_term_taxonomy: (11)
+svc_termmeta: (0)
+svc_terms: (11)
+svc_usermeta: (39)
+svc_users: (1)
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_download_log: (0)
+wp_links: (0)
+wp_options: (150)
+wp_postmeta: (15)
+wp_posts: (5)
+wp_term_relationships: (1)
+wp_term_taxonomy: (1)
+wp_termmeta: (0)
+wp_terms: (1)
+wp_usermeta: (20)
+wp_users: (1)
+Removed '23' cache/transient rows
+
+INSERT DATA RUNTIME: 1.7300 sec.
+STEP-2 COMPLETE @ 06:38:01 - RUNTIME: 1.7700 sec.
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 06:38:14
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+eshop_commentmeta^ (0)
+eshop_comments^ (0)
+eshop_failed_jobs^ (0)
+eshop_links^ (0)
+eshop_mailchimp_carts^ (0)
+eshop_options~ (394)
+eshop_postmeta~ (237)
+eshop_posts~ (66)
+eshop_queue^ (0)
+eshop_responsive_menu~ (280)
+eshop_term_relationships~ (5)
+eshop_term_taxonomy~ (18)
+eshop_termmeta~ (1)
+eshop_terms~ (18)
+eshop_usermeta~ (34)
+eshop_users~ (1)
+eshop_wc_download_log^ (0)
+eshop_wc_webhooks^ (0)
+eshop_woocommerce_api_keys^ (0)
+eshop_woocommerce_attribute_taxonomies^ (0)
+eshop_woocommerce_downloadable_product_permissions^ (0)
+eshop_woocommerce_log^ (0)
+eshop_woocommerce_order_itemmeta^ (0)
+eshop_woocommerce_order_items^ (0)
+eshop_woocommerce_payment_tokenmeta^ (0)
+eshop_woocommerce_payment_tokens^ (0)
+eshop_woocommerce_sessions~ (1)
+eshop_woocommerce_shipping_zone_locations~ (1)
+eshop_woocommerce_shipping_zone_methods~ (2)
+eshop_woocommerce_shipping_zones~ (1)
+eshop_woocommerce_tax_rate_locations^ (0)
+eshop_woocommerce_tax_rates^ (0)
+eshop_yoast_seo_links^ (0)
+eshop_yoast_seo_meta~ (65)
+svc_commentmeta^ (0)
+svc_comments^ (0)
+svc_duplicator_packages^ (0)
+svc_links^ (0)
+svc_options~ (140)
+svc_postmeta~ (777)
+svc_posts~ (212)
+svc_term_relationships~ (22)
+svc_term_taxonomy~ (11)
+svc_termmeta^ (0)
+svc_terms~ (11)
+svc_usermeta~ (39)
+svc_users~ (1)
+wp_commentmeta^ (0)
+wp_comments~ (1)
+wp_download_log^ (0)
+wp_links^ (0)
+wp_options~ (150)
+wp_postmeta~ (15)
+wp_posts~ (5)
+wp_term_relationships~ (1)
+wp_term_taxonomy~ (1)
+wp_termmeta^ (0)
+wp_terms~ (1)
+wp_usermeta~ (20)
+wp_users~ (1)
+--------------------------------------
+Search1:	'C:/xampp/htdocs/svc' 
+Change1:	'C:/xampp/htdocs/main' 
+Search2:	'C:\/xampp\/htdocs\/svc' 
+Change2:	'C:\/xampp\/htdocs\/main' 
+Search3:	'C%3A%2Fxampp%2Fhtdocs%2Fsvc%2F' 
+Change3:	'C%3A%2Fxampp%2Fhtdocs%2Fmain%2F' 
+Search4:	'C:\xampp\htdocs\svc' 
+Change4:	'C:/xampp/htdocs/main' 
+Search5:	'C:\\xampp\\htdocs\\svc' 
+Change5:	'C:\/xampp\/htdocs\/main' 
+Search6:	'C%3A%5Cxampp%5Chtdocs%5Csvc' 
+Change6:	'C%3A%2Fxampp%2Fhtdocs%2Fmain' 
+Search7:	'//localhost/svc' 
+Change7:	'//localhost/main' 
+Search8:	'\/\/localhost\/svc' 
+Change8:	'\/\/localhost\/main' 
+Search9:	'%2F%2Flocalhost%2Fsvc' 
+Change9:	'%2F%2Flocalhost%2Fmain' 
+Search10:	'https://localhost' 
+Change10:	'http://localhost' 
+Search11:	'https:\/\/localhost' 
+Change11:	'http:\/\/localhost' 
+Search12:	'https%3A%2F%2Flocalhost' 
+Change12:	'http%3A%2F%2Flocalhost' 
+SCANNED:	Tables:60 	|	 Rows:2532 	|	 Cells:14942 
+UPDATED:	Tables:2 	|	 Rows:223 	|	 Cells:226 
+ERRORS:		0 
+RUNTIME:	0.360000 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG ARK FILE:
+ - 'C:/xampp/htdocs/main/wp-config.php'
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+
+====================================
+NOTICES
+====================================
+
+No General Notices Found
+
+
+STEP-3 COMPLETE @ 06:38:14 - RUNTIME: 0.3800 sec. 
+
+
